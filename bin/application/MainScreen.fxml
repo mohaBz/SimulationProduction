@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<HBox fx:controller="application.MainControler"  xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10"  >
+	<!-- TODO Add Nodes -->
+	<Button text="Cas 1" prefWidth="90" onAction="#casUne" >
+	  </Button>
+	<Button text="Cas 2" prefWidth="90" onAction="#casDeux"></Button>
+</HBox>
+
