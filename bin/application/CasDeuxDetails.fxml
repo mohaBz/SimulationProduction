@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-<GridPane fx:controller="application.CasDeuxControler" xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" vgap="15" >
+<GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" vgap="15" > 
 	<!-- TODO Add Nodes -->
 	<VBox spacing="5" GridPane.rowIndex="0"> 
 	<Label text="Quantite de commande"  ></Label>
-	<TextField fx:id="quantCommande"></TextField>
+	<TextField fx:id="quantCammande"></TextField>
 	</VBox>
 	<VBox spacing="5" GridPane.rowIndex="1">
 		<Label text="Numbre de camion" ></Label>
@@ -29,7 +29,7 @@
 		<Label text="capacité de depot" ></Label>
 		<TextField fx:id="capDepot"  ></TextField>
 	</VBox>
-	<Button onAction="#startSimulation" fx:id="startSimulationBt"  text="Simulation" prefWidth="90" GridPane.rowIndex="5"></Button>
+	<Button fx:id="startSimulationBt"  text="Simulation" prefWidth="90" GridPane.rowIndex="5"></Button>
 	<Label GridPane.rowIndex="6" GridPane.rowSpan="2"  fx:id="errorLb" textFill="red"
 		   prefWidth="160" ></Label>
 </GridPane>
