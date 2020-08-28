@@ -2,6 +2,7 @@ package application;
 
 public class DataHolder {
     private int matQuantity;
+    private boolean isPremMat=true;
     private int numCamion;
     private int capCamion;
     private int numDepot;
@@ -51,5 +52,13 @@ public class DataHolder {
 
     public static DataHolder getInstance() {
         return instance;
+    }
+
+    public boolean isPremMat() {
+        return isPremMat;
+    }
+
+    public void setPremMat(boolean premMat) {
+        isPremMat = premMat;
     }
 }

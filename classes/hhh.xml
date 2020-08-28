@@ -17,7 +17,7 @@
   <jre>
     <path>C:\Program Files\Java\jre1.8.0_151</path>
     <bundledJre64Bit>false</bundledJre64Bit>
-    <minVersion>1.7.0</minVersion>
+    <minVersion></minVersion>
     <maxVersion></maxVersion>
     <jdkPreference>preferJre</jdkPreference>
     <runtimeBits>64/32</runtimeBits>

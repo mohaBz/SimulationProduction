@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <?import javafx.scene.layout.HBox?>
+    <?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.paint.Color?>
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" spacing="60"
+      fx:controller="application.HomeControler"
+      style="-fx-background-color: gray;"
+    >
+    <HBox style="-fx-background-color: Black;" alignment="TOP_LEFT" spacing="5" >
+        <padding >
+            <Insets top="10" bottom="10"/>
+        </padding>
+        <ImageView fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+        <HBox.margin>
+            <Insets left="10"/>
+        </HBox.margin>
+            <image>
+
+                <Image url="/buttonsImg/118099942_331879884660451_3206105020675848980_n.jpg" />
+            </image>
+        </ImageView>
+        <VBox>
+        <Text  text="Chaîne de production alimentaire">
+            <font>
+
+                <Font name="Arial Black" size="22"/>
+            </font>
+            <fill>
+                <Color fx:value="white"/>
+            </fill>
+        </Text>
+            <Text text="Tomate concervé">
+                <font>
+
+                    <Font name="Arial Black" size="18"/>
+                </font>
+                <fill>
+                    <Color fx:value="white"/>
+                </fill>
+            </Text>
+
+        </VBox>
+    </HBox>
+        <!-- TODO Add Nodes -->
+        <Button  fx:id="simulationBt" text="Simulation" prefWidth="150" style="-fx-background-color: white;" prefHeight="90" onAction="#onButtonClick"  ><padding>
+            <Insets left="0"
+                    right="0"></Insets>
+        </padding>
+            <font  >
+                <Font name="Arial Black"   size="14"></Font>
+
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/buttonsImg/simulation.jpg" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+    <HBox spacing="10" alignment="CENTER" >
+        <Button style="-fx-background-color: pink;" fx:id="collectBt" text="La collect" prefWidth="150" prefHeight="90"  onAction="#onButtonClick" >
+            <padding>
+                <Insets left="0"
+                        right="0"></Insets>
+            </padding>
+            <font  >
+                <Font name="Arial Black"   size="14"></Font>
+
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/buttonsImg/collect.jpg" />
+                    </image>
+                </ImageView>
+            </graphic>
+
+        </Button>
+        <Button style="-fx-background-color: AQUA;" fx:id="productionBt" text="La production" prefWidth="150" prefHeight="90" onAction="#onButtonClick" ><padding>
+            <Insets left="0"
+                    right="0"></Insets>
+        </padding>
+            <font  >
+                <Font name="Arial Black"   size="14"></Font>
+
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/buttonsImg/prod.jpg" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <Button style="-fx-background-color: LIGHTYELLOW;" fx:id="trqnsportBt" text="Le transport" prefWidth="150" prefHeight="90" onAction="#onButtonClick" ><padding>
+            <Insets left="0"
+                    right="0"></Insets>
+        </padding>
+            <font  >
+                <Font name="Arial Black"   size="14"></Font>
+
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/buttonsImg/trans.jpg" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <Button style="-fx-background-color: CHARTREUSE;" fx:id="stockageBt" text="Le stockage" prefWidth="150" prefHeight="90" onAction="#onButtonClick" ><padding>
+            <Insets left="0"
+                    right="0"></Insets>
+        </padding>
+            <font  >
+                <Font name="Arial Black"   size="14"></Font>
+
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/buttonsImg/stockage.jpg" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <Button style="-fx-background-color: TOMATO;" fx:id="livraisonBt" text="La livraison" prefWidth="150" prefHeight="90" onAction="#onButtonClick" ><padding>
+            <Insets left="0"
+                    right="0"></Insets>
+        </padding>
+            <font  >
+                <Font name="Arial Black"   size="14"></Font>
+
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/buttonsImg/transport.jpg" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+    </HBox>
+    </VBox>
+

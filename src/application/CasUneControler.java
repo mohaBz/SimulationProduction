@@ -70,7 +70,7 @@ public class CasUneControler {
 		{
 			Stage stage=Main.getStage();
 			Parent root= FXMLLoader.load(getClass().getResource("ResultSimulation.fxml"));
-			Scene scene = new Scene(root,600,400);
+			Scene scene = new Scene(root,1000,600);
 			stage.setScene(scene);
 			stage.show();
 		}catch(Exception e){
@@ -95,5 +95,18 @@ public class CasUneControler {
 					startSimulationBt.setDisable(false);
 			}
 		});
+	}
+	public void onBackPressed(){
+		try
+		{
+			Stage stage=Main.getStage();
+			Parent root= FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
+			Scene scene = new Scene(root,1000,600);
+			stage.setScene(scene);
+			stage.show();
+		}catch(Exception e){
+			e.printStackTrace();
+			System.out.printf("error click"+e.getMessage());
+		}
 	}
 }

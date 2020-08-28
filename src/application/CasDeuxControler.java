@@ -39,15 +39,25 @@ public class CasDeuxControler {
     }
 
 
-
+    public void onBackPressed(){
+        try
+        {
+            Stage stage=Main.getStage();
+            Parent root= FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
+            Scene scene = new Scene(root,1000,600);
+            stage.setScene(scene);
+            stage.show();
+        }catch(Exception e){
+            e.printStackTrace();
+            System.out.printf("error click"+e.getMessage());
+        }
+    }
 
     public void startSimulation(){
         DataHolder dataHolder=DataHolder.getInstance();
         int numProduit=Integer.parseInt(quantCommande.getText());
-        int quantMat=(int)(numProduit
-                /(0.9*0.93*0.95));
-        System.out.printf(quantMat+"matrial premiere");
-        dataHolder.setMatQuantity(quantMat);
+        dataHolder.setPremMat(false);
+        dataHolder.setMatQuantity(numProduit);
         dataHolder.setNumCamion(Integer.parseInt(numCamion.getText()));
         dataHolder.setCapCamion(Integer.parseInt(capCamion.getText()));
         dataHolder.setNumDepot(Integer.parseInt(numDepot.getText()));
@@ -70,7 +80,7 @@ public class CasDeuxControler {
         {
             Stage stage=Main.getStage();
             Parent root= FXMLLoader.load(getClass().getResource("ResultSimulation.fxml"));
-            Scene scene = new Scene(root,600,400);
+            Scene scene = new Scene(root,1000,600);
             stage.setScene(scene);
             stage.show();
         }catch(Exception e){

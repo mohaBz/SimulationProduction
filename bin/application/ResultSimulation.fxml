@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 <?import javafx.geometry.Insets?>
-<GridPane fx:controller="application.ResultControler" xmlns:fx="http://javafx.com/fxml/1" vgap="15" >
+<GridPane style="-fx-background-color: gray;" fx:controller="application.ResultControler" xmlns:fx="http://javafx.com/fxml/1" vgap="15" >
 	<padding>
 		<Insets left="10"/>
 	</padding>
@@ -78,4 +78,5 @@
 	</font>
 	</Label>
 	</HBox>
+	<Button text="Back" onAction="#onBackPressed" GridPane.rowIndex="6"></Button>
 </GridPane>
